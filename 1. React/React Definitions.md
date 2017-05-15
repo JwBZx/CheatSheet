@@ -59,9 +59,8 @@ All getter/setter method for a certain piece of data will always be in the same 
 [The reason for this is because the parent component (FriendContainer) doesn’t care about the new friend you’re adding, it only cares about all of your friends as a whole (the friends array). However, because we’re sticking with the rule of only manipulate your data from the component that cares about it, we’ve passed the addFriend method down into our AddFriend component as a prop and we call it with the new friend once the handleAddNew method is called.]
 
 <b>#15: map (Method):</b>
-All map does is it creates a new array, calls our callback function on each item in the array, and fills the new array with the result of calling the callback function on each item.
-[Notice all that happened was we made a new array and added <li> </li> to each item in the original array.
-So in our child component above, we’re mapping over names, wrapping each name in a pair of <li> tags, and saving that to our listItems variable. Then, our render method returns an unordered list with all of our friends.]
+All map does is it creates a new array, calls our callback function on each item in the array, and fills the new array with the result of calling the callback function on each item. [Notice all that happened was we made a new array and added to each item in the original array.
+So in our child component above, we’re mapping over names, wrapping each name in a pair of < li > tags, and saving that to our listItems variable. Then, our render method returns an unordered list with all of our friends.]
 
 <b>#16: propTypes:</b>
 propTypes allow you to control the presence, or types of certain props passed to the child component. With propTypes you can specify that certain props are required or that certain props be a specific type.
@@ -80,11 +79,11 @@ componentWillMount is fired before the component will mount and is invoked once 
 componentDidMount is fired after the component mounted and is invoked once after the initial render.
 [Because the component has already been invoked when this method is invoked, you have access to the virtual DOM if you need it. You do that by calling this.getDOMNode().]
 
-<b>#21: componentWillReceiveProps:<b>
+<b>#21: componentWillReceiveProps:</b>
 componentWillReceiveProps is fired whenever there is a change to props and this life cycle is not called on the initial render, but is instead called whenever there is a change to props.
 [Use this method as a way to react to a prop change before render() is called by updating the state with setState.]
 
-<b>#22: componentWillUnmount:<b>
+<b>#22: componentWillUnmount:</b>
 componentWillUnmount is fired before the component will unmount and this life cycle is invoked immediately before a component is unmounted from the DOM. This is where you can do necessary clean up. [For example, going back to our firebase example this is the life cycle event where you would clean up your firebase reference you set in componentWillMount.]
 [There are a few more life cycle methods, but the ones I’ve covered are the ones that
 I’ve seen which are the most useful.] #?1: onClick (Event):
