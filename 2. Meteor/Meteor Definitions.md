@@ -1,17 +1,19 @@
 <h1>Meteor Definitions</h1>
 
-<b>#1: Meteor (JavaScript Framework):<b>
+<b>#1: Meteor (JavaScript Framework):</b>
 There is a lot to love about the Meteor JavaScript Framework: (1) With nothing but JavaScript, you’re able to build modern, real-time web applications for both desktop and mobile platforms. (2) Beginning developers can quickly build something impressive and useful, while more advanced developers can appreciate Meteor’s flexibility. (3) There’s an active community that organizes meetups, publishes free training material (like this book), and offers help wherever possible.
 Meteor adds the html tags to the beginning and end of the file, and it automatically includes any resources contained within the project’s folder (like JavaScript and CSS files).
 This isn’t the most remarkable feature in the world, but one of Meteor’s core philosophies is
 developer happiness, so there’s plenty of time-saving features like this spread throughout the
 framework.
 
-<b>#2: Command Line (CLI): "The command line is a text interface for your computer. It's a program that takes in commands, which it passes on to the computer's operating system to run."
+<b>#2: Command Line (CLI):</b>
+"The command line is a text interface for your computer. It's a program that takes in commands, which it passes on to the computer's operating system to run."
 These days, command line interfaces as they’re known — or “CLI” for short — are still used by
 software developers. To install the Meteor framework on our computers, and then interact with that software, we have to work with the command line.
 
-<b>#3: Leaderboard: Leaderboard is an example application that was designed by the Meteor Development Group to show off what Meteor could do with very few lines of code. Leaderboard has since been replaced by more advanced examples on the official website, but it is our example project for two main reasons:
+<b>#3: Leaderboard:</b>
+Leaderboard is an example application that was designed by the Meteor Development Group to show off what Meteor could do with very few lines of code. Leaderboard has since been replaced by more advanced examples on the official website, but it is our example project for two main reasons:
 First, the application already exists. It’s something we can play with, and that means we can get a good idea of what we’re trying to build before we write a single line of code.
 Second, the application is simple. This means we don’t have to worry about the conceptual aspect of building the software (which is usually the most difficult part). Instead, we can focus on learning Meteor itself.
 To get hands-on time with Leaderboard, visit leaderboard2.meteor.com and, while
@@ -29,7 +31,8 @@ around, take note of its core features:
 The central feature of the Leaderboard application is the list of players. Without the list of players
 appearing inside the interface, we can’t build anything else of value.
 
-<b>#4: Project: To create our first Meteor application, we’ll need to create our first project, and a project is the
+<b>#4: Project:</b>
+To create our first Meteor application, we’ll need to create our first project, and a project is the
 self-contained set of files that form the foundation of an application. You can use the words
 “project” and “application” interchangeably, but “project” is better-suited when talking about
 the application as it’s being developed.
@@ -41,25 +44,32 @@ Every project is different, but will generally contain:
 A project can contain other types of files, like images and CoffeeScript files, but we’ll keep things
 as simple as possible throughout this book and only work with what we need.
 
-<b>#5: HTML (Files): HTML files create the interface.
+<b>#5: HTML (Files):</b>
+HTML files create the interface.
 
-<b>#6: CSS (Files): CSS files assign styles to the interface.
+<b>#6: CSS (Files):</b>
+CSS files assign styles to the interface.
 
-<b>#7: JavaScript (Files): JavaScript files define application logic.
+<b>#7: JavaScript (Files):</b>
+JavaScript files define application logic.
 
-<b>#8: Folders: Folders keep everything organized. Before we create a project for the Leaderboard application though, let’s create a folder to store our Meteor projects. We don’t have to do this, but it’s a good idea for the sake of keeping things organized.
+<b>#8: Folders:</b>
+Folders keep everything organized. Before we create a project for the Leaderboard application though, let’s create a folder to store our Meteor projects. We don’t have to do this, but it’s a good idea for the sake of keeping things organized.
 
-<b>#9: mkdir Meteor (make directory): To create a new folder, we could select the “New
+<b>#9:</b>
+mkdir Meteor (make directory): To create a new folder, we could select the “New
 Folder” option from the “File” menu, but where’s the fun in that? Instead, enter the following into the command line:
 mkdir Meteor
 Then tap the “Return” key.
 This mkdir command stands for “make directory” and it allows us to make a directory. In this particular instance, we’re creating a directory named “Meteor”, but you can call the folder whatever you want. The precise location where the folder will appear will depend on your operating system, but at least on Mac OS X, the folder will appear inside the “Home” directory by default.
 
-<b>#10: cd Meteor (choose directory): To navigate to a directory that you have created (by using the mkdir Meteor command), type the following command into the command line:
+<b>#10:</b>
+cd Meteor (choose directory): To navigate to a directory that you have created (by using the mkdir Meteor command), type the following command into the command line:
 cd Meteor
 This cd command stands for “change directory” and it’s the command line equivalent of double-clicking on a directory from within the graphical interface, so after tapping the “Return” key, we’ll be inside the “Meteor” directory.
 
-<b>#11: meteor create ___ (leaderboard): To create a Meteor project inside a directory (the one you made using mkdir Meteor), type the following command into the command line:
+<b>#11: meteor create ___ (leaderboard):</b>
+To create a Meteor project inside a directory (the one you made using mkdir Meteor), type the following command into the command line:
 meteor create ___ (leaderboard)
 This command has three parts:
 • The meteor part defines this as a Meteor command.
@@ -70,9 +80,11 @@ After running this command, a “leaderboard” directory will appear inside the
 • leaderboard.css
 • leaderboard.js
 
-<b>#12: .Meteor: A hidden file folder.
+<b>#12: .Meteor:</b>
+A hidden file folder.
 
-<b>#13: Local Server: To get the web application working as planned, we need to launch what’s known as a local server. This is a web server that runs on our local machine. It’s included with Meteor itself and allows
+<b>#13: Local Server:</b>
+To get the web application working as planned, we need to launch what’s known as a local server. This is a web server that runs on our local machine. It’s included with Meteor itself and allows
 us to:
  2. Run a database on our local machine.
 To continually see the results of our code, we’ll need to keep the local server running. This simply
@@ -85,12 +97,14 @@ means leaving the command line open from this point onward. You will, however, n
 a separate tab or window to write further commands.
 To stop the local server, either quit out of the command line, or with the command line in focus, press CTRL + C on your keyboard.
 
-<b>#14: meteor run: Once you are in the application directory (so "leaderboard" in this case), type the following command into the command line:
+<b>#14: meteor run:</b>
+Once you are in the application directory (so "leaderboard" in this case), type the following command into the command line:
 meteor run
 Here, the meteor part defines this as a Meteor command and the run part clarifies the precise action we want to take. In this context, we’re wanting to run the local server.
 Make sure you’re inside a project’s folder before running the command.
 
-<b>#15: http://localhost:3000/: After tapping the “Return” key (after typing in "meteor run" into the command line), the following should appear:
+<b>#15: http://localhost:3000/:</b>
+After tapping the “Return” key (after typing in "meteor run" into the command line), the following should appear:
 => Started proxy.
 => Started MongoDB.
 => Started your app.
@@ -101,7 +115,8 @@ Navigate to this URL from inside Chrome and notice that we’re no longer seeing
 Instead, we’re seeing a functional web application. The application itself is the result of the code
 that’s included with every Meteor project by default.
 
-<b>#16: JavaScript Console: "Type the following into the JavaScript file: console.log("Hello world");
+<b>#16: JavaScript Console:</b>
+"Type the following into the JavaScript file: console.log("Hello world");
 Then save the file and open the JavaScript Console from inside Chrome: 1. Click on the View menu.
 2. Hover over the Developer option.
 3. Select the JavaScript Console option.
@@ -115,14 +130,17 @@ We can also use the Console to manipulate our application’s database.
 passed through the console.log statement.
 We can also use the Console to manipulate our application’s database.
 
-<b>#17: 'console.log' Statements: console.log statements are used to see the output of code without creating an interface to display that output. This means that, before we invest time into creating an interface, we can:
+<b>#17: 'console.log' Statements:</b>
+console.log statements are used to see the output of code without creating an interface to display that output. This means that, before we invest time into creating an interface, we can:
 1. Confirm that our code is working as expected.
 2. Fix any bugs as soon as they appear.
 
-<b>#18: Front-End (Interface): For our Leaderboard application, without the list of players
+<b>#18: Front-End (Interface):</b>
+For our Leaderboard application, without the list of players
 appearing inside the interface, we can’t build anything else of value
 
-<b>#19: Database (Back-End): If you’ve built something on the web before, you’ve probably come into contact with some kind of database. Maybe you’ve installed a copy of WordPress, or used phpMyAdmin, or even built
+<b>#19: Database (Back-End):</b>
+If you’ve built something on the web before, you’ve probably come into contact with some kind of database. Maybe you’ve installed a copy of WordPress, or used phpMyAdmin, or even built
 some software with a language like PHP. In these cases, you would have come into contact with an SQL database.
 By default, every Meteor project comes with its own database. There’s no setup or configuration required. Whenever you create a project, a database is automatically created for that project, and whenever the local server is running, so is that database. This database, however, is not an SQL database. Instead, it’s what’s known as a MongoDB database.
 For the moment, you only need to know two things:
@@ -132,11 +150,12 @@ Second, Mongo uses different words to describe familiar concepts. We won’t, fo
 use words like “tables” and “rows”, but the concepts are basically the same. You can see the
 differences in a table (See I#3 in "Images from the Book").
 
-<b>#21: SQL Database: Maybe you’ve installed a copy of WordPress, or used
+<b>#21: SQL Database:</b>
+Maybe you’ve installed a copy of WordPress, or used
 phpMyAdmin, or even built
 some software with a language like PHP. In these cases, you would have come into contact with an SQL database.
 
-<b>#22: Collection:
+<b>#22: Collection:</b>
 Here’s two questions to consider:
 • Where do we store the data associated with each player?
 • How do we display this data from within the interface?
@@ -146,7 +165,7 @@ To illustrate the purpose of a collection, imagine we’re creating our own vers
 with Meteor. If that were the case, we’d create a collection for the posts, a collection for the
 comments, and a collection for the pages. We’d create a collection for each type of data. For our Leaderboard application, we’ll create a collection for the players.
 
-<b>#23: new Mongo.Collection('players'):
+<b>#23: new Mongo.Collection('players'):</b>
 To create a Collection of players, open the JavaScript file and write the following statement:
 new Mongo.Collection('players');
 Here, we’re creating a collection named “players” inside our project’s Mongo database. You can
@@ -157,7 +176,7 @@ collection’s variable into the Console:
 PlayersList
 This should show that the collection is working as expected (unless you got an error due to typing or something else).
 
-<b>#24: PlayersList = new Mongo.Collection('players'):
+<b>#24: PlayersList = new Mongo.Collection('players'):</b>
 Despite this line of code ("new Mongo.Collection('players')") though, we haven’t defined a way for us to reference this collection, and therefore we have no way of manipulating it.
     PlayersList = new Mongo.Collection('players');
 But notice that we didn’t use the var keyword, and that’s because we want to create a global
@@ -167,9 +186,11 @@ To fix this, place the collection inside a variable:
 But notice that we didn’t use the var keyword, and that’s because we want to create a global
 variable.
 
-<b>#25: Global Variable: A variable (without the "var" keyword) that allows us to reference and manipulate a collection throughout all of our project’s files.
+<b>#25: Global Variable:</b>
+A variable (without the "var" keyword) that allows us to reference and manipulate a collection throughout all of our project’s files.
 
-<b>#26: Inserting Data: When we want to insert data into a collection, we have four options. (1) We can insert data through the JavaScript Console, (2) through the command line, (3) through the JavaScript file, (4) and through a
+<b>#26: Inserting Data:</b>
+When we want to insert data into a collection, we have four options. (1) We can insert data through the JavaScript Console, (2) through the command line, (3) through the JavaScript file, (4) and through a
 form in the interface. The first option — through the JavaScript Console — is the simplest.
 Inside the Console, write the following:
 PlayersList.insert();
@@ -203,7 +224,8 @@ Since white-space is ignored though, the statement can be written on one line:
 PlayersList.insert({ name: "Bob", score: 0 });
 (To see the definition of (a) "Document", see below/#28.)
 
-<b>#27: JSON Format: The data we pass through to a collection needs to be in the JSON format, and if you’re not familiar with the JSON format, this is what it looks like:
+<b>#27: JSON Format:</b>
+The data we pass through to a collection needs to be in the JSON format, and if you’re not familiar with the JSON format, this is what it looks like:
 {
 name: "David",
 score: 0 }
@@ -217,7 +239,8 @@ field is “David” and the value of the score field is 0.
 Fourth, the key-value pairs are separated with commas. This is because the JSON format
 ignores white-space, so commas are required to provide structure.
 
-<b>#28: Keys: Keys (like "name" and "score" above in #27), and in Mongo terminology, these are the fields for our collection. There are values associated with our keys, like
+<b>#28: Keys:</b>
+Keys (like "name" and "score" above in #27), and in Mongo terminology, these are the fields for our collection. There are values associated with our keys, like
 (in the code above in #27) the "name" field being “David” and the value of the "score" field being 0. The key-value pairs are separated with commas to provide structure (and because the JSON format ignores white-space).
 We can also click on the downward-facing arrows to see the data associated with each document,
 including:
@@ -226,13 +249,16 @@ mentioned before).
 • The name field, which stores the name of the player.
 • The score field, which stores the score of the player.
 
-<b>#29: (A) Document: Documents are equivalent to SQL rows. For our Leaderboard application, we want to create one document for every player we want in our collection. So if we want our leaderboard to contain six players, we’ll need to use the insert function six times, thereby creating six documents.
+<b>#29: (A) Document:</b>
+Documents are equivalent to SQL rows. For our Leaderboard application, we want to create one document for every player we want in our collection. So if we want our leaderboard to contain six players, we’ll need to use the insert function six times, thereby creating six documents.
 
-<b>#30: ID (Primary Key): After creating each document, a random jumble of numbers and letters appears in the Console. This jumble is a unique ID that’s automatically created by MongoDB and associated with each document. It’s known as the primary key.
+<b>#30: ID (Primary Key):</b>
+After creating each document, a random jumble of numbers and letters appears in the Console. This jumble is a unique ID that’s automatically created by MongoDB and associated with each document. It’s known as the primary key.
 So in the same way we created a name and score field, Mongo creates an _id field for each document.
 (The underscore itself doesn’t have any special significance. It’s just part of the field’s name.)
 
-<b>#31: Finding/Fetching/Counting/Retrieving Data: Once there is some data in a collection, you can retrieve that data. We’ll do this through the interface in the next chapter, but for the moment, let’s simply do it through the Console.
+<b>#31: Finding/Fetching/Counting/Retrieving Data:</b>
+Once there is some data in a collection, you can retrieve that data. We’ll do this through the interface in the next chapter, but for the moment, let’s simply do it through the Console.
 Inside the Console, enter the following:
 PlayersList.find();
 Here, we’re using this find function, which is used to retrieve data from the specified collection.
@@ -250,7 +276,9 @@ attaching the count function to the find function:
 PlayersList.find().count();
 Since this statement will count all of the documents in the collection, if there’s six players
 (documents) in the collection, the number 6 will be returned.
-#32: Templates: If we want to start building the user interface for the Leaderboard application, we are going to need to start creating our first templates.
+
+<b>#32: Templates:</b>
+If we want to start building the user interface for the Leaderboard application, we are going to need to start creating our first templates.
 To begin, place the following code inside the leaderboard.html file:
 <head>
 <title>Leaderboard</title> </head>
@@ -293,16 +321,14 @@ Based on these changes, the HTML file should now resemble:
 {{> leaderboard}} </body>
 <template name="leaderboard"> Hello World
 </template>
-#33: Spacebars Syntax: Spacebars is the syntax we use in our HTML when we want
- occur. It’s the syntax that bridges the gap between the interface and the application logic.
-1. All Spacebars tags use double-curly braces to distinguish themselves.
-something dynamic to
-</template>
-#33: Spacebars Syntax: Spacebars is the syntax we use in our HTML when we want
+
+<b>#33: Spacebars Syntax:</b>
+Spacebars is the syntax we use in our HTML when we want
  occur. It’s the syntax that bridges the gap between the interface and the application logic.
 1. All Spacebars tags use double-curly braces to distinguish themselves.
 2. We only use the greater-than symbol when we want to include a template.
-#34: Client and Server:
+
+<b>#34: Client and Server:</b>
 Inside the JavaScript file, write the following console.log statement: console.log("Hello world");
 What I didn’t mention last time though is that, as a result of this statement, something else is also
 happening, and if we switch to the command line, we can see that the “Hello world” message
@@ -345,7 +371,8 @@ But if none of this is really sinking in, just remember two things:
 We’ve mostly been writing code that’s meant to run inside the browser (such as code that affects the interface) [on the client]. There are, however, plenty of situations where we want code to run on the server.
 Code that is executed on the server is inherently trusted. So while we’ve stopped users of the application from accessing data on the front-end — on the client-side — we can continue
 to retrieve the data while on the server.
-#35: Helper Function (and Each Block):
+
+<b>#35: Helper Function (and Each Block):</b>
 At this point, our “leaderboard” template only shows the static “Hello World” text. To fix this,
 we’re going to create a helper function, and a helper function is a regular JavaScript function
 that’s attached to a template and allows us to execute code from within an interface. To begin, we’ll take an old approach for creating helper functions. This approach is deprecated,
@@ -468,7 +495,8 @@ to the interface:
 {{#each player}}
 <li>{{name}}: {{score}}</li>
 {{/each}} </ul>
-#36: Events & Event Selectors:
+
+<b>#36: Events & Event Selectors:</b>
 At this point, we have a list of players that’s appearing inside the interface, but there’s no way for
 users to interact with this list. The data is dynamically retrieved from the “PlayersList”
  but the user will still probably assume that the application is completely static. We're going to create the effect of being able to select players inside the list: specifically, when a user clicks on one of the players, the background color of that
@@ -537,7 +565,8 @@ Then use this class as the event selector: 'click .player': function(){
  }
 Here, we’ve made is so the event will only trigger when the user clicks on an element that has
 the .player class attached to it.
-#37: Sessions:
+
+<b>#37: Sessions:</b>
 When a user clicks one of the .player elements, a function executes. When this function is
 triggered, we want to change the background color of that element, thereby creating the effect
 of the player being selected.
@@ -696,7 +725,8 @@ returned by the
 selectedClass function and placed inside the class attribute for that players li element. Based
 on that class, the background color of the player’s li element will be changed to yellow. (And
 because the session can only store a single value, only one player can be selected at a time.)
-#38: Give 5 Points (Increment)/Buttons:
+
+<b>#38: Give 5 Points (Increment)/Buttons:</b>
 Inside the “leaderboard” template, we’ll create a “Give 5 Points” button that, when clicked, will
 increment the score of the selected player.
 To begin, place the following button inside the “leaderboard” template:
@@ -791,7 +821,8 @@ var selectedPlayer=Session.get('selectedPlayer');
 PlayersList.update(selectedPlayer, {$inc: {score: 5} }); }
 Based on this change, whenever the update function is triggered, the value of the score field
 will be incremented by whatever value we specify (in this case, that’s the value of 5).
-#39: Take 4 Points/Decrement:
+
+<b>#39: Take 4 Points/Decrement:</b>
 A feature that’s not present in the original Leaderboard application is the ability to decrement
 scores. Such a feature would be useful though since it means we could:
 1. Penalize players for not following the rules.
@@ -826,7 +857,8 @@ The final code for the event should resemble:
 'click .decrement': function(){
 var selectedPlayer=Session.get('selectedPlayer');
 PlayersList.update(selectedPlayer, {$inc: {score: -5} }); }
-#40: Sorting Documents (sort operator):
+
+<b>#40: Sorting Documents (sort operator):</b>
 At the moment, the players in the list are ranked by the time they were inserted into the
 collection, rather than being ranked by their scores.
 To fix this, we’ll modify the return statement that’s inside the player helper function: 'player': function(){
@@ -867,7 +899,8 @@ return PlayersList.find({}, {sort: {score: -1, name: 1} })
 The players will still be primarily ranked by their scores, but once that sorting has occurred,
 the players will also be ranked by their names. This secondary sorting will occur in ascending
 (alphabetical) order.
-#41: "showSelectedPlayer"/findOne (Individual Documents):
+
+<b>#41: "showSelectedPlayer"/findOne (Individual Documents):</b>
 When a user selects one of the players, that player’s name should appear beneath the list of
 players. This isn’t the most useful feature, but:
 1. It’s part of the original Leaderboard application.
@@ -903,11 +936,11 @@ We should also make it so the template doesn’t attempt to display a player’s
 isn’t selected, which can be done with a simple conditional:
 {{#if showSelectedPlayer}}
 <li>Selected Player: {{showSelectedPlayer.name}}</li> {{/if}}
-#42: Forms (submit event)/preventDefault function/Inserting-removing Players (submit/remove function):
+
+<b>#42: Forms (submit event)/preventDefault function/Inserting-removing Players (submit/remove function):</b>
 We’re going to create a form that allows users to add players to the leaderboard,
 {{#if showSelectedPlayer}}
 <li>Selected Player: {{showSelectedPlayer.name}}</li> {{/if}}
- #42: Forms (submit event)/preventDefault function/Inserting-removing Players (submit/remove function):
 We’re going to create a form that allows users to add players to the leaderboard, along with some other interface controls.
 Inside the HTML file, create a second template named “addPlayerForm”:
 <template name="addPlayerForm">
@@ -1066,7 +1099,8 @@ We haven’t talked about the remove function yet, but there’s nothing much to
  about it. All
 we have to do is pass through the unique ID of a document as the only argument. That document
 will then be removed from the collection.
-#43: Accounts System:
+
+<b>#43: Accounts System:</b>
 We're going to create a user accounts system, which just so happens to be one of the simplest
 things we can do with the framework.
 With this system in place, we’ll make it so:
@@ -1170,7 +1204,8 @@ return PlayersList.find({createdBy: currentUserId}, {sort: {score: -1, name: 1}}
 This ensures that users only see players they added to the leaderboard, thereby creating the effect
 that each user has their own, unique list of players.
 (To see the definition of (a) "Packages", see below/#44.)
-#44: Packages:
+
+<b>#44: Packages:</b>
 To extend the functionality of our Meteor projects in a matter of seconds, we can install a range
 of packages, and packages are essentially plugins that:
 1. Add important features to a project.
@@ -1178,18 +1213,14 @@ of packages, and packages are essentially plugins that:
 By default, every Meteor project has local access to a number of official packages. These are
 packages that most developers will need to use at some point or another, but not necessarily
 inside every project. (There are also thousands of third-party packages.)
-#45: Meteor.users:
+
+<b>#45: Meteor.users:</b>
 Once the “accounts-password” package is added to the project, a collection is automatically
 created to store the data of registered users. This collection is known as Meteor.users and it
 works just like any collection that we might create ourselves.
 Knowing this, we can use the find and fetch functions on this collection: Meteor.users.find().fetch();
-#46: meteor reset (Reset)/Stopping the Local Server:
-To give ourselves a fresh start, switch to the command line, stop the local server with CTRL
-+ C, and enter the following command:
-meteor reset
-This will wipe the database clean, and because of the code we wrote in the previous
-section, all
-#46: meteor reset (Reset)/Stopping the Local Server:
+
+<b>#46: meteor reset (Reset)/Stopping the Local Server:</b>
 To give ourselves a fresh start, switch to the command line, stop the local server with CTRL
 + C, and enter the following command:
 meteor reset
@@ -1197,7 +1228,8 @@ This will wipe the database clean, and because of the code we wrote in the previ
 players added to the collection at this point will be attached to the currently logged-in user.
 You’ll probably find yourself using this command semi-regularly, as lots of useless data can easily
 fill up a database during development.
-#47: autopublish:
+
+<b>#47: autopublish:</b>
 The functionality that allows us to navigate through a project’s data using the Console is
 contained within an “autopublish” package that’s included with every meteor project by default.
 If we remove this package, users won’t be able to access any data through the Console, but it
@@ -1208,7 +1240,8 @@ thing returned is an empty array. It looks like the data has been deleted, but t
 It’s just been secured.
 The problem is, our data is now too secure, because if we login to either of the user accounts, the
 data is also inaccessible from the interface.
-#48: Publishing Data (Meteor.publish):
+
+<b>#48: Publishing Data (Meteor.publish):</b>
 Conceptually, you can think of publishing data as transmitting data from the server and into the
 ether. We’re just specifying what data should be available to users. We don’t care where that
 data ends up.
@@ -1235,7 +1268,8 @@ Meteor.publish function can only return documents that contain the unique ID of 
 The return statement inside the player function can only ever retrieve data that is being published from the server. Therefore, specifying that we want to retrieve the user’s data in
 two places is redundant. We only need to define the returned data within the Meteor.publish
 function.
-#49: Subscribing [to] Data (Meteor.subscribe):
+
+<b>#49: Subscribing [to] Data (Meteor.subscribe):</b>
 [Because of the Meteor.publish function that’s executing on the server, we can now subscribe to
 this data from inside the isClient conditional, once again making the project’s data accessible
 through the browser and Console.]
@@ -1251,7 +1285,8 @@ through is the
 name of a publish function: Meteor.subscribe('thePlayers');
 You’ll notice that, once again, we have access to all of the data from the project’s database,
 meaning our application is back to its original state.
-#50: Methods:
+
+<b>#50: Methods:</b>
 To achieve this [See Q#12], we’ll create our first methods, and methods are blocks of code that are executed
 on the server after being triggered from the client.
 The syntax is similar to how we create both helpers and events.
