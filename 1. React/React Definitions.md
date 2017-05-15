@@ -1,4 +1,4 @@
-<h1>Definitions:<h1>
+<h1>Definitions:</h1>
 
 <b>#1: React:</b>
 React is “just the V in MVC” or “just the view layer”.
